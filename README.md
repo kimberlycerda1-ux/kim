@@ -83,13 +83,6 @@ python src/carga_db.py --hasta 2026-07-31
 python src/carga_db.py --desde 2015-01-01 --hasta 2026-07-31
 ```
 
-Fijar el corte es lo que hace reproducible la extracción, y es también la
-primera defensa contra el sesgo de anticipación cuando evalúen pronósticos.
-
-**Revisen la salida.** Si una serie falla (código equivocado, API caída), se
-informa con `[ERROR]` y el proceso **continúa con las demás**. El script termina
-sin error aunque falten series. Cuenten los `[OK]`: deben ser tantos como series
-tenga su catálogo.
 
 **5. Definir SUS series**
 
